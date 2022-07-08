@@ -59,8 +59,6 @@ def map_setosa_knn(X_train, y_train, knn, fig_x=12.0, fig_y=5.0):
     plt.xlim(xx.min(), xx.max())
     plt.ylim(yy.min(), yy.max())
 
-    n_neighbors = clf.get_params()['n_neighbors']
-    weights = clf.get_params()['weights']
     plt.title("3-Class classification (k = %i, '%s')"
     % (n_neighbors, weights))
 
